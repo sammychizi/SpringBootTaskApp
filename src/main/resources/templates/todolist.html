@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDoList</title>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<h1>Tasks</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Task</th>
+            <th>Description</th>
+            <th>status</th>
+        </tr>
+        <tr th:each="item : ${items}">
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.title}"></td>
+            <td th:text="${item.description}"></td>
+            <td th:text="${item.status}"></td>
+        </tr>
+    </table>
+</body>
+</html>

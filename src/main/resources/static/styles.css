@@ -1,0 +1,12 @@
+body{
+    background-color: teal;
+    color: white;
+}
+h1{
+    font-family: "Calibri Light", sans-serif;
+    font-size: 2rem;
+}
+table, tr, th, td{
+    border: 1px solid white;
+    font-family: Arial;
+}
